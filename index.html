@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
             <ul>
@@ -18,36 +20,68 @@
         </nav>
     </header>
 
+    <!-- Home Section -->
     <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm [Your Name], a passionate [your profession].</p>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Your Name</span></h1>
+            <p>A passionate Web Developer & Designer</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
+        <div class="container">
+            <div class="about-img">
+                <img src="assets/profile.jpg" alt="Your Profile Picture">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm a web developer who loves crafting clean and modern websites. I specialize in front-end development, but I also have experience in back-end technologies. I enjoy learning new skills and exploring innovative solutions to challenges.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A cool web application I built using JavaScript and React.</p>
+                </div>
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A portfolio website showcasing my design skills and front-end work.</p>
+                </div>
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>An e-commerce platform built with HTML, CSS, and PHP.</p>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at [your email].</p>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Your Name | All rights reserved</p>
     </footer>
 
     <script src="script.js"></script>
